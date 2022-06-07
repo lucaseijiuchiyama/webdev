@@ -1,0 +1,137 @@
+@media screen and (min-width:650px){
+	#header{
+		display:flex;
+		flex-direction:row-reverse;
+		justify-content:space-between;
+	}
+
+	#links{
+		display:flex;
+		flex-direction:row;
+		flex-wrap:wrap;
+		justify-content: flex-start;
+		align-items:flex-start;
+	}
+
+	#main{
+		display:flex;
+		flex-direction:row;
+	}
+
+	#menu_lateral{
+		width:400px;
+	}
+
+	#conteudo{
+		width:100%-400px;
+	}
+
+}
+
+@media screen and (max-width:650px){
+	#header{
+		display:flex;
+		flex-direction:column;
+		justify-content:center;
+		align-items:center;
+	}
+
+	#info_div{
+		display:flex;
+		flex-direction:column;
+		justify-content:center;
+		align-items: center;
+	}
+
+	#links{
+		display:flex;
+		flex-direction:row;
+		flex-wrap:wrap;
+		justify-content:center;
+		align-items:center;
+	}
+
+	#main{
+		display:flex;
+		flex-direction:column;
+	}
+	
+}
+
+body{
+	background-color:black;
+	color:white;
+	font-family: Arial, Helvetica, sans-serif;
+	padding:0;
+	margin:0;
+	height:5000px;
+}
+
+.menu_superior_link{
+	text-decoration:none;
+	color:white;
+	padding:15px;
+}
+	
+.menu_superior_link:hover{
+	background-color:yellow;
+	color:black;
+}
+
+#links{
+	background-color:rgb(70, 70, 70);
+	color:white;
+	position:sticky;
+	top:0;
+}
+
+#logo{
+	width: 100px;
+	height: auto;
+	margin:10px;
+}
+
+#apresentacao{
+	background-color:rgb(200, 200, 255);
+	padding:5px;
+	color:black;
+}
+	
+#primeira_aula{
+	background-color:rgb(255, 200, 200);
+	padding:5px;
+	color:black;
+}
+
+#segunda_aula{
+	background-color:rgb(200, 255, 200);
+	padding:5px;
+	color:black;
+}
+
+#terceira_aula{
+	background-color:bisque;
+	padding:5px;
+	color:black;
+}
+
+#quarta_aula{
+	background-color:pink;
+	padding:5px;
+	color:black;
+}
+
+#menu_lateral{
+	background-color: aqua;
+	padding:5px;
+	color:black;
+}
+
+.menu_lateral_link{
+	text-decoration: none;
+	color:black;
+}
+
+.menu_lateral_link:hover{
+	color:red;
+}
