@@ -1,61 +1,12 @@
-@media screen and (min-width:650px){
-	#header{
-		display:flex;
-		flex-direction:row-reverse;
-		justify-content:space-between;
-	}
-
-	#links{
-		display:flex;
-		flex-direction:row;
-		flex-wrap:wrap;
-		justify-content: flex-start;
-		align-items:flex-start;
-	}
-
-	#main{
-		display:flex;
-		flex-direction:row;
-	}
-
-	#menu_lateral{
-		width:400px;
-	}
-
-	#conteudo{
-		width:100%-400px;
-	}
-
+#header{
+	display:flex;
+	flex-direction:row-reverse;
+	justify-content:space-between;
 }
 
-@media screen and (max-width:650px){
-	#header{
-		display:flex;
-		flex-direction:column;
-		justify-content:center;
-		align-items:center;
-	}
-
-	#info_div{
-		display:flex;
-		flex-direction:column;
-		justify-content:center;
-		align-items: center;
-	}
-
-	#links{
-		display:flex;
-		flex-direction:row;
-		flex-wrap:wrap;
-		justify-content:center;
-		align-items:center;
-	}
-
-	#main{
-		display:flex;
-		flex-direction:column;
-	}
-	
+#main{
+	display:flex;
+	flex-direction:row;
 }
 
 body{
@@ -64,7 +15,6 @@ body{
 	font-family: Arial, Helvetica, sans-serif;
 	padding:0;
 	margin:0;
-	height:5000px;
 }
 
 .menu_superior_link{
@@ -72,13 +22,19 @@ body{
 	color:white;
 	padding:15px;
 }
-	
+
 .menu_superior_link:hover{
 	background-color:yellow;
 	color:black;
 }
 
 #links{
+	display:flex;
+	flex-direction:row;
+	flex-wrap:wrap;
+	justify-content: flex-start;
+	align-items:flex-start;
+
 	background-color:rgb(70, 70, 70);
 	color:white;
 	position:sticky;
@@ -96,7 +52,7 @@ body{
 	padding:5px;
 	color:black;
 }
-	
+
 #primeira_aula{
 	background-color:rgb(255, 200, 200);
 	padding:5px;
@@ -122,8 +78,9 @@ body{
 }
 
 #menu_lateral{
+	min-width: 30vh;
 	background-color: aqua;
-	padding:5px;
+	padding:1em;
 	color:black;
 }
 
@@ -134,4 +91,28 @@ body{
 
 .menu_lateral_link:hover{
 	color:red;
+}
+
+@media screen and (max-width:650px){
+	#header{
+		flex-direction:column;
+		justify-content:center;
+		align-items:center;
+	}
+
+	#info_div{
+		display:flex;
+		flex-direction:column;
+		justify-content:center;
+		align-items: center;
+	}
+
+	#links{
+		justify-content:center;
+		align-items:center;
+	}
+
+	#main{
+		flex-direction:column;
+	}
 }
